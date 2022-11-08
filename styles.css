@@ -1,8 +1,7 @@
 body {
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-    background-position: fixed;
+    background-attachment: fixed;
     background-size: 100vw;
-    background-repeat: no-repeat;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     text-shadow: 1px 1px 4px black;
@@ -13,6 +12,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     
 }
 a {
@@ -22,8 +22,17 @@ h4, h2 {
     text-shadow: 1px 1px 4px black;
     color: ivory;
 }
+
+p {
+    margin: 10px 10%;
+}
+
 button {
     margin: 2%;
+    background-color: #FBBB2D;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
 }
 
 table, th, tr {

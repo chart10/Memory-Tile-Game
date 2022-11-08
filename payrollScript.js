@@ -18,16 +18,22 @@ function beginPayroll() {
         let employee = { Name:curName, Hours:curHours, Pay:curPay};
         employees.push(employee);
     }  
+    if (employees.length == 0) {
+        document.getElementById("empty").innerHTML = "No Information entered.";
+        return;
+    }
     buildPayroll();
 }
 
 
 function buildPayroll() {
+    
     let table = document.querySelector("table");
     let data = Object.keys(employees[0]);
     generateTable(table, employees);
     generateTableHead(table, data);
     document.querySelector('#btn').disabled = true;
+    document.getElementById("empty").innerHTML = "";
 
 }
 
