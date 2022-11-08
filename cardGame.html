@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="cardGameScript.js"></script>
     <title>Memory Card Game</title>
   </head>
   <body>
@@ -42,19 +41,174 @@
     </div>
 
     <h2>Interdepartmental Memory Card Game</h2>
-    <p>
-      Here at ANI•BUSINESS we aim to create a work environment that promotes
-      familiarity among our staff. To that end, we've worked with the Fun
-      Department to create a memory game about our great employees. Try your
-      luck!
-    </p>
-    <p>
-      To play, choose the size of your board and try to match all of the cards
-      as quickly as you can. These cards show off all of the wonderful folks
-      that make ANI•BUSINESS possible!
-    </p>
+    <div id="instructions">
+      <p>
+        Here at ANI•BUSINESS we aim to create a work environment that promotes
+        familiarity among our staff. To that end, we've worked with the Fun
+        Department to create a memory game about our great employees. Try your
+        luck!
+      </p>
+      <p>
+        To play, choose the size of your board and try to match all of the cards
+        as quickly as you can. These cards show off all of the wonderful folks
+        that make ANI•BUSINESS possible!
+      </p>
+    </div>
 
+    <p>Choose you board!</p>
+    <button id="easy">8 x 8</button>
+    <button id="medium">10 x 10</button>
+    <button id="hard">12 x 12</button>
     <br />
+
+    <section class="gameboard">
+      <div class="card">
+        <div class="front">
+          <img src="static/cards/baboon.jpeg" alt="baboon" width="100" />
+        </div>
+        <div class="back">
+          <img
+            src="static/cards/anibusiness.jpg"
+            alt="Memory Card"
+            width="100"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="front">
+          <img src="static/cards/baboon.jpeg" alt="baboon" width="100" />
+        </div>
+        <div class="back">
+          <img
+            src="static/cards/anibusiness.jpg"
+            alt="Memory Card"
+            width="100"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="front">
+          <img src="static/cards/cat.jpg" alt="cat" width="100" />
+        </div>
+        <div class="back">
+          <img
+            src="static/cards/anibusiness.jpg"
+            alt="Memory Card"
+            width="100"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="front">
+          <img src="static/cards/cat.jpg" alt="cat" width="100" />
+        </div>
+        <div class="back">
+          <img
+            src="static/cards/anibusiness.jpg"
+            alt="Memory Card"
+            width="100"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="front">
+          <img src="static/cards/cheetah.jpg" alt="cheetah" width="100" />
+        </div>
+        <div class="back">
+          <img
+            src="static/cards/anibusiness.jpg"
+            alt="Memory Card"
+            width="100"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="front">
+          <img src="static/cards/cheetah.jpg" alt="cheetah" width="100" />
+        </div>
+        <div class="back">
+          <img
+            src="static/cards/anibusiness.jpg"
+            alt="Memory Card"
+            width="100"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="front">
+          <img src="static/cards/cow.jpg" alt="cow" width="100" />
+        </div>
+        <div class="back">
+          <img
+            src="static/cards/anibusiness.jpg"
+            alt="Memory Card"
+            width="100"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="front">
+          <img src="static/cards/cow.jpg" alt="cow" width="100" />
+        </div>
+        <div class="back">
+          <img
+            src="static/cards/anibusiness.jpg"
+            alt="Memory Card"
+            width="100"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="front">
+          <img src="static/cards/dog.jpg" alt="dog" width="100" />
+        </div>
+        <div class="back">
+          <img
+            src="static/cards/anibusiness.jpg"
+            alt="Memory Card"
+            width="100"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="front">
+          <img src="static/cards/dog.jpg" alt="dog" width="100" />
+        </div>
+        <div class="back">
+          <img
+            src="static/cards/anibusiness.jpg"
+            alt="Memory Card"
+            width="100"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="front">
+          <img src="static/cards/frog.jpg" alt="frog" width="100" />
+        </div>
+        <div class="back">
+          <img
+            src="static/cards/anibusiness.jpg"
+            alt="Memory Card"
+            width="100"
+          />
+        </div>
+      </div>
+      <div class="card">
+        <div class="front">
+          <img src="static/cards/frog.jpg" alt="frog" width="100" />
+        </div>
+        <div class="back">
+          <img
+            src="static/cards/anibusiness.jpg"
+            alt="Memory Card"
+            width="100"
+          />
+        </div>
+      </div>
+    </section>
+    <br />
+
     <div class="footer">
       <figure>
         <img src="./static/eagle.jpg" alt="business hawk" width="200" />
@@ -66,5 +220,6 @@
       <a href="payroll.html">Part A - Payroll</a>
       <a href="../index.html">Return to Student Homepage</a>
     </div>
+    <script src="cardGameScript.js"></script>
   </body>
 </html>
