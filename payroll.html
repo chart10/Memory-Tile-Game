@@ -7,36 +7,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="payrollScript.js"></script>
     <title>Payroll Calculator</title>
   </head>
   <body>
     <div class="header">
-      <img src="./static/giraffe.jpg" alt="business giraffe" width="150" />
+      <figure>
+        <img
+          src="./static/framedGiraffe.jpg"
+          alt="business giraffe"
+          width="300"
+        />
+        <figcaption>
+          Chester Von Beanpole<br />
+          CEO
+        </figcaption>
+      </figure>
+
       <div class="title">
         <h1>ANI•BUSINESS</h1>
         <h4>Animals Doing Business</h4>
         <h5>
-          Assignment 3 • Part A • <a href="cardGame.html">Part B</a> • Web
+          Assignment 4 • Part A • <a href="cardGame.html">Part B</a> • Web
           Programming 4370
         </h5>
       </div>
-      <img src="./static/zebra.jpg" alt="business zebra" width="150" />
+      <figure>
+        <img src="./static/framedZebra.jpg" alt="business zebra" width="300" />
+        <figcaption>
+          Timothy "Stripes" Oppenheimer<br />
+          Head of Sales
+        </figcaption>
+      </figure>
     </div>
 
-    <h4>Payroll Deparment</h4>
-    <button type="button" onclick="">Begin Payroll</button>
+    <h2>Payroll Deparment</h2>
 
-    <form action="">
-      <label for="employee">Enter your employee's name here</label>
-      <input type="text" name="employee" />
-    </form>
+    <button id="btn" type="button" onclick="beginPayroll()">
+      Begin Payroll
+    </button>
+    <table></table>
+
     <br />
     <div class="footer">
-      <img src="./static/monkey.jpg" alt="business monkey" width="300" />
+      <figure>
+        <img src="./static/monkey.jpg" alt="business zebra" width="300" />
+        <figcaption>Reginald Kong<br />Lead Financier</figcaption>
+      </figure>
       <br />
-      <a href="cardGame.html">Part B</a>
+      <a href="cardGame.html">Part B - Card Game</a>
       <a href="../index.html">Return to Student Homepage</a>
     </div>
+    <script src="payrollScript.js"></script>
   </body>
 </html>
