@@ -6,7 +6,7 @@ body {
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     background-attachment: fixed;
     background-size: 100vw;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     text-shadow: 1px 1px 4px black;
     color: ivory;
@@ -52,14 +52,14 @@ button {
 .gameboard {
     height: 650px;
     width: 650px;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background-color: rgba(0,0,0,.25);
     border-radius: 5px;
-    margin: auto;
-    perspective: 1000px;
+    /* perspective: 1000px; */
 }
 
 .card {
@@ -67,16 +67,16 @@ button {
     height: calc(20%);
     margin: 15px;
     position: relative;
-    transition: transform .5s;
+    /* transition: transform .5s; */
+    /* transform-style: preserve-3d; */
     transform: scale(1);
-    transform-style: preserve-3d;
 }
 .card.flip {
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
 }
 .card.flip .back {
-    /* backface-visibility: hidden; */
-    transform: rotateY(180deg);
+    visibility: hidden;
+    /* transform: rotateY(180deg); */
 }
 
 .card:active {
@@ -89,25 +89,35 @@ button {
     height: 100%;
     padding: 10px;
     position: absolute;
+    backface-visibility: hidden;
     background-color: rgba(0,0,0,.25);
     border-radius: 5px;
-    backface-visibility: hidden;
 }
 .front {
     backface-visibility: visible;
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
 }
 
 /* ----------------------------------------------------------- */
 /* ----------------------------------------------------------- */
 
 
-table, th, tr {
+table {
     text-align: center;
     width: 40%;
     background-color: rgba(0,0,0,.25);
     padding: 20px;
     margin: 5% auto;
+    border-radius: 5px;
+}
+tr {
+    padding: 10px;
+}
+table img {
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.25);
 }
 .footer {
     bottom: 10px;
