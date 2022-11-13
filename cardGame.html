@@ -26,10 +26,7 @@
       <div class="title">
         <h1>ANI•BUSINESS</h1>
         <h4>Animals Doing Business</h4>
-        <h5>
-          Assignment 4 • <a href="payroll.html">Part A</a> • Part B • Web
-          Programming 4370
-        </h5>
+        <h5>Assignment 4 • Part B • Web Programming 4370</h5>
       </div>
       <figure>
         <img src="./static/framedZebra.jpg" alt="business zebra" width="300" />
@@ -56,209 +53,50 @@
     </div>
 
     <p>Choose you board!</p>
-    <button id="easy">8 x 8</button>
-    <button id="medium">10 x 10</button>
-    <button id="hard">12 x 12</button>
-    <br />
+    <!-- <form action="">
+      <button id="easy" onclick="chooseSize(8)">8 Animals</button>
+      <button id="medium" onclick="chooseSize(10)">10 Animals</button>
+      <button id="hard" onclick="chooseSize(12)">12 Animals</button>
+    </form> -->
 
-    <table id="myTable" cellspacing="10px"></table>
+    <form action="">
+      <div class="inputFields">
+        <div class="inputTile">
+          <input type="radio" name="size" value="8" required />
+          <label for="8">8 Animals</label>
+        </div>
+        <div class="inputTile">
+          <input type="radio" name="size" value="10" />
+          <label for="10">10 Animals</label>
+        </div>
+        <div class="inputTile">
+          <input type="radio" name="size" value="12" />
+          <label for="12">12 Animals</label>
+        </div>
+        <br />
+      </div>
+      <div class="inputFields">
+        <div class="inputTile">
+          <input type="radio" name="difficulty" value="8000" required />
+          <label for="8000">Easy</label>
+        </div>
+        <div class="inputTile">
+          <input type="radio" name="difficulty" value="5000" />
+          <label for="5000">Medium</label>
+        </div>
+        <div class="inputTile">
+          <input type="radio" name="difficulty" value="3000" />
+          <label for="3000">Hard</label>
+        </div>
+        <br />
+      </div>
+      <button type="button" id="start">Start New Game!</button>
+    </form>
+    <form action=""></form>
 
-    <section class="gameboard">
-      <div class="card" data-name="baboon">
-        <div class="front">
-          <img src="static/cards/baboon.jpeg" alt="baboon" width="100" />
-        </div>
-        <div class="back">
-          <img
-            src="static/cards/anibusiness.jpg"
-            alt="Memory Card"
-            width="100"
-          />
-        </div>
-      </div>
-      <div class="card" data-name="baboon">
-        <div class="front">
-          <img src="static/cards/baboon.jpeg" alt="baboon" width="100" />
-        </div>
-        <div class="back">
-          <img
-            src="static/cards/anibusiness.jpg"
-            alt="Memory Card"
-            width="100"
-          />
-        </div>
-      </div>
-      <div class="card" data-name="cat">
-        <div class="front">
-          <img src="static/cards/cat.jpg" alt="cat" width="100" />
-        </div>
-        <div class="back">
-          <img
-            src="static/cards/anibusiness.jpg"
-            alt="Memory Card"
-            width="100"
-          />
-        </div>
-      </div>
-      <div class="card" data-name="cat">
-        <div class="front">
-          <img src="static/cards/cat.jpg" alt="cat" width="100" />
-        </div>
-        <div class="back">
-          <img
-            src="static/cards/anibusiness.jpg"
-            alt="Memory Card"
-            width="100"
-          />
-        </div>
-      </div>
-      <div class="card" data-name="cheetah">
-        <div class="front">
-          <img src="static/cards/cheetah.jpg" alt="cheetah" width="100" />
-        </div>
-        <div class="back">
-          <img
-            src="static/cards/anibusiness.jpg"
-            alt="Memory Card"
-            width="100"
-          />
-        </div>
-      </div>
-      <div class="card" data-name="cheetah">
-        <div class="front">
-          <img src="static/cards/cheetah.jpg" alt="cheetah" width="100" />
-        </div>
-        <div class="back">
-          <img
-            src="static/cards/anibusiness.jpg"
-            alt="Memory Card"
-            width="100"
-          />
-        </div>
-      </div>
-      <div class="card" data-name="cow">
-        <div class="front">
-          <img src="static/cards/cow.jpg" alt="cow" width="100" />
-        </div>
-        <div class="back">
-          <img
-            src="static/cards/anibusiness.jpg"
-            alt="Memory Card"
-            width="100"
-          />
-        </div>
-      </div>
-      <div class="card" data-name="cow">
-        <div class="front">
-          <img src="static/cards/cow.jpg" alt="cow" width="100" />
-        </div>
-        <div class="back">
-          <img
-            src="static/cards/anibusiness.jpg"
-            alt="Memory Card"
-            width="100"
-          />
-        </div>
-      </div>
-      <div class="card" data-name="dog">
-        <div class="front">
-          <img src="static/cards/dog.jpg" alt="dog" width="100" />
-        </div>
-        <div class="back">
-          <img
-            src="static/cards/anibusiness.jpg"
-            alt="Memory Card"
-            width="100"
-          />
-        </div>
-      </div>
-      <div class="card" data-name="dog">
-        <div class="front">
-          <img src="static/cards/dog.jpg" alt="dog" width="100" />
-        </div>
-        <div class="back">
-          <img
-            src="static/cards/anibusiness.jpg"
-            alt="Memory Card"
-            width="100"
-          />
-        </div>
-      </div>
-      <div class="card" data-name="frog">
-        <div class="front">
-          <img src="static/cards/frog.jpg" alt="frog" width="100" />
-        </div>
-        <div class="back">
-          <img
-            src="static/cards/anibusiness.jpg"
-            alt="Memory Card"
-            width="100"
-          />
-        </div>
-      </div>
-      <div class="card" data-name="frog">
-        <div class="front">
-          <img src="static/cards/frog.jpg" alt="frog" width="100" />
-        </div>
-        <div class="back">
-          <img
-            src="static/cards/anibusiness.jpg"
-            alt="Memory Card"
-            width="100"
-          />
-        </div>
-      </div>
-      <!-- <div class="mediumCards">
-        <div class="card" data-name="lion">
-          <div class="front">
-            <img src="static/cards/lion.jpg" alt="lion" width="100" />
-          </div>
-          <div class="back">
-            <img
-              src="static/cards/anibusiness.jpg"
-              alt="Memory Card"
-              width="100"
-            />
-          </div>
-        </div>
-        <div class="card" data-name="lion">
-          <div class="front">
-            <img src="static/cards/lion.jpg" alt="lion" width="100" />
-          </div>
-          <div class="back">
-            <img
-              src="static/cards/anibusiness.jpg"
-              alt="Memory Card"
-              width="100"
-            />
-          </div>
-        </div>
-        <div class="card" data-name="panda">
-          <div class="front">
-            <img src="static/cards/panda.jpg" alt="panda" width="100" />
-          </div>
-          <div class="back">
-            <img
-              src="static/cards/anibusiness.jpg"
-              alt="Memory Card"
-              width="100"
-            />
-          </div>
-        </div>
-        <div class="card" data-name="panda">
-          <div class="front">
-            <img src="static/cards/panda.jpg" alt="panda" width="100" />
-          </div>
-          <div class="back">
-            <img
-              src="static/cards/anibusiness.jpg"
-              alt="Memory Card"
-              width="100"
-            />
-          </div>
-        </div>
-      </div> -->
-    </section>
+    <div id="countdown" hidden><p id="clock"></p></div>
+    <table id="myTable" cellspacing="15px" hidden></table>
+
     <br />
 
     <div class="footer">
