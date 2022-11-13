@@ -7,8 +7,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="cardGameScript.js"></script>
     <title>Memory Card Game</title>
   </head>
-  <body></body>
+  <body>
+    <div class="header">
+      <figure>
+        <img
+          src="./static/framedGiraffe.jpg"
+          alt="business giraffe"
+          width="300"
+        />
+        <figcaption>
+          Chester Von Beanpole<br />
+          CEO
+        </figcaption>
+      </figure>
+
+      <div class="title">
+        <h1>ANI•BUSINESS</h1>
+        <h4>Animals Doing Business</h4>
+        <h5>Assignment 4 • Part B • Web Programming 4370</h5>
+      </div>
+      <figure>
+        <img src="./static/framedZebra.jpg" alt="business zebra" width="300" />
+        <figcaption>
+          Timothy "Stripes" Oppenheimer<br />
+          Head of Sales
+        </figcaption>
+      </figure>
+    </div>
+
+    <h2>Interdepartmental Memory Card Game</h2>
+    <div id="instructions">
+      <p>
+        Here at ANI•BUSINESS we aim to create a work environment that promotes
+        familiarity among our staff. To that end, we've worked with the Fun
+        Department to create a memory game about our great employees. Try your
+        luck!
+      </p>
+      <p>
+        To play, choose the size of your board and try to match all of the cards
+        as quickly as you can. These cards show off all of the wonderful folks
+        that make ANI•BUSINESS possible!
+      </p>
+    </div>
+
+    <p>Choose you board!</p>
+    <!-- <form action="">
+      <button id="easy" onclick="chooseSize(8)">8 Animals</button>
+      <button id="medium" onclick="chooseSize(10)">10 Animals</button>
+      <button id="hard" onclick="chooseSize(12)">12 Animals</button>
+    </form> -->
+
+    <form action="">
+      <div class="inputFields">
+        <div class="inputTile">
+          <input type="radio" name="size" value="8" required />
+          <label for="8">8 Animals</label>
+        </div>
+        <div class="inputTile">
+          <input type="radio" name="size" value="10" />
+          <label for="10">10 Animals</label>
+        </div>
+        <div class="inputTile">
+          <input type="radio" name="size" value="12" />
+          <label for="12">12 Animals</label>
+        </div>
+        <br />
+      </div>
+      <div class="inputFields">
+        <div class="inputTile">
+          <input type="radio" name="difficulty" value="8000" required />
+          <label for="8000">Easy</label>
+        </div>
+        <div class="inputTile">
+          <input type="radio" name="difficulty" value="5000" />
+          <label for="5000">Medium</label>
+        </div>
+        <div class="inputTile">
+          <input type="radio" name="difficulty" value="3000" />
+          <label for="3000">Hard</label>
+        </div>
+        <br />
+      </div>
+      <button type="button" id="start">Start New Game!</button>
+    </form>
+    <form action=""></form>
+
+    <div id="countdown" hidden><p id="clock"></p></div>
+    <table id="myTable" cellspacing="15px" hidden></table>
+
+    <br />
+
+    <div class="footer">
+      <figure>
+        <img src="./static/eagle.jpg" alt="business hawk" width="200" />
+        <figcaption>
+          Mark Talon<br />Regional Department of Fun Coordinator
+        </figcaption>
+      </figure>
+      <br />
+      <a href="payroll.html">Part A - Payroll</a>
+      <a href="../index.html">Return to Student Homepage</a>
+    </div>
+    <script src="cardGameScript.js"></script>
+  </body>
 </html>
